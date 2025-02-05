@@ -220,17 +220,15 @@
     z-index: 2;
     margin-top: 5rem;
  }
- .N-screen{
-    position: relative;
+ .N-screen {
+    position: absolute; 
     width: 230px;
-    height: 580px;
-    
-    background-color: whitesmoke;
-   
-    border-radius: 10px;
-    
+    height: 460px; 
+    background-color: #eaeaea; /
+    border-radius: 8px;
+    top: 20px; 
+    left: 10px; 
     z-index: 3;
-    border-color: black;
 
  }
  .N-rocket{
@@ -244,6 +242,23 @@
  #rocket-search{
     border-radius: 4px;
  }
+ .N-rec2 {
+    position: relative;    /* Ensures it's positioned relative to the .N-screen */
+    z-index: 4;            /* Ensures it's above the phone screen */
+    top: 20px;             /* Adjusts the vertical position to your liking */
+    left: 10px;            /* Aligns it inside the phone container */
+    width: 230px;          /* Matches the width of the phone screen */
+    height: 460px;         /* Matches the height of the phone screen */
+    overflow: hidden;      /* Ensures no part of the image overflows */
+    border-radius: 8px;    /* Optional: keeps the image corners rounded */
+}
+
+.N-rec2 img {
+    width: 100%;           /* Ensures the image scales to fit inside the container */
+    height: auto;          /* Maintains the image's aspect ratio */
+    display: block;        /* Prevents any space below the image */
+}
+
 
 
  
