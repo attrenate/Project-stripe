@@ -224,8 +224,8 @@
     position: absolute; 
     width: 230px;
     height: 460px; 
-    background-color: #eaeaea; /
-    border-radius: 8px;
+    background-color: #eaeaea; 
+    border-radius: 16px;
     top: 20px; 
     left: 10px; 
     z-index: 3;
@@ -242,22 +242,185 @@
  #rocket-search{
     border-radius: 4px;
  }
- .N-rec2 {
-    position: relative;    /* Ensures it's positioned relative to the .N-screen */
-    z-index: 4;            /* Ensures it's above the phone screen */
-    top: 20px;             /* Adjusts the vertical position to your liking */
-    left: 10px;            /* Aligns it inside the phone container */
-    width: 230px;          /* Matches the width of the phone screen */
-    height: 460px;         /* Matches the height of the phone screen */
-    overflow: hidden;      /* Ensures no part of the image overflows */
-    border-radius: 8px;    /* Optional: keeps the image corners rounded */
+.N-rec1{
+    position: absolute;
+    background-color: rgb(128, 0, 255);
+    width: 60px;
+    height: 70px;
+    border-radius: 4px;
+    z-index: 4;
+    margin-left: 85px;
+    margin-top: 25px;
 }
+.N-text-rec1{
+    position: absolute;
+    color: white;
+    z-index: 3;
+    font-size: xx-small;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.N-rec2{
+    position: absolute;
+    z-index: 6;
+    background-color: wheat;
+    border-radius: 4px;
+    width: 60px;
+    height: 70px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.N-text-rec2{
+    position: absolute;
+    z-index: 8;
+    color: white;
+    font-size: xx-small;
 
-.N-rec2 img {
-    width: 100%;           /* Ensures the image scales to fit inside the container */
-    height: auto;          /* Maintains the image's aspect ratio */
-    display: block;        /* Prevents any space below the image */
 }
+.abstract{
+    position: absolute;
+    z-index: 4;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: black;
+    margin-top: 120px;
+    margin-left: 70px;
+    
+}
+.pay-rec{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: darkblue;
+    z-index: 6;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-top: 160px;
+}
+.pay{
+    position: absolute;
+    z-index: 7;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+    color: white;
+    margin-left: 85px;
+    margin-top: 5px;
+}
+.email{
+    position: absolute;
+    z-index: 4;
+    font-size: x-small;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    margin-top: 220px;
+    margin-left: 5px;
+}
+.email-box{
+    position: absolute;
+    z-index: 4;
+    border-color: wheat;
+    background-color: #eaeaea;
+    width: 200px;
+    height: 10px;
+    margin-top: 235px;
+    margin-left: 15px;
+}
+.card{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: x-small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 80px;
+    margin-top: 200px;
+}
+.card-info{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 250px;
+}
+.Number{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: x-small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 265px;
+    word-spacing: 100px;
+
+}
+.MM{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: x-small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 280px;
+    word-spacing: 100px;
+    
+
+}
+.country{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 310px;
+    
+}
+.U{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 330px;
+
+
+}
+.zip{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 350px;
+
+}
+.pay-reck1{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: darkblue;
+    z-index: 6;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-top: 390px;
+}
+.pay-reck1-text{
+    position: absolute;
+    z-index: 7;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+    color: white;
+    margin-left: 85px;
+    margin-top: 390px;
+
+}
+    
+    
+    
+
 
 
 
@@ -282,7 +445,7 @@
  }
  
  /* For screens smaller than 768px (Mobile/Tablets) */
- @media (max-width: 768px) {
+ @media (max-width: 768px)* Prevents any space below the image */ {
      ul {
          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
      }
@@ -314,8 +477,7 @@
         display: none;
     }
     .N-icons{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
     }
  }
  @media (max-width: 480px) {
