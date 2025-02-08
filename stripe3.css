@@ -174,7 +174,7 @@
  
  .N-icons {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
      gap: 15px;
      max-width: fit-content;
      margin: 20px auto;
@@ -522,7 +522,7 @@
  }
  
  /* For screens smaller than 768px (Mobile/Tablets) */
- @media (max-width: 768px)* Prevents any space below the image */ {
+ @media (max-width: 768px)/* Prevents any space below the image */ {
      ul {
          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
      }
@@ -540,8 +540,60 @@
      #N-search {
          width: 90%; 
      }
-     .N-icons {
-         grid-template-columns: repeat(3, 1fr); 
+  
+     
+     .N-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 1fr); 
+        gap: 10px; 
+        margin: 0 auto; 
+        width: 80%; 
+        z-index: 3;
+        margin-top: 10rem;
+    }
+
+    .N-icon {
+        width: 100%;
+        height: auto; 
+        object-fit: cover;
+    }
+
+    .N-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        max-width: 100%; 
+        margin: 0 auto; 
+        z-index: 3;
+    }
+     .N-search-container{
+        display: none;
+     }
+     #text{
+        margin-top: 2rem;
+     }
+     .N-screen{
+        display: none;
+     }
+     .N-phone{
+        display: none;
+
+     }
+     .card{
+        display: none;
+     }
+     .pay-rec{
+        display: none;
+     }
+     .card-info{
+        display: none;
+     }
+     .email-box{
+        display: none;
+     }
+     .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rce2, .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, .stat-img, .stat1-img, .N-phone-background-fade{
+        display: none;
      }
  }
  
@@ -553,8 +605,9 @@
     .N-list{
         display: none;
     }
-    .N-icons{
-        flex-direction: column;
+ 
+    .N-screen{
+        display: none;
     }
  }
  @media (max-width: 480px) {
@@ -578,6 +631,29 @@
      .N-icons {
          grid-template-columns: 1fr 1fr; 
      }
+     .N-screen{
+        display: none;
+     }
+     .N-phone{
+        display: none;
+
+     }
+     .card{
+        display: none;
+     }
+     .pay-rec{
+        display: none;
+     }
+     .card-info{
+        display: none;
+     }
+     .email-box{
+        display: none;
+     }
+     .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rce2, .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, .stat-img, .stat1-img, .N-phone-background-fade{
+        display: none;
+     }
+
  }
  @keyframes moveGradient {
      0% {
