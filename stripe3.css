@@ -417,16 +417,93 @@
     margin-top: 390px;
 
 }
+.stat-rec{
+    position: absolute;
+    z-index: 4;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin-left: 78em;
+    border-radius: 10px;
+    margin-top: 7rem;
     
+}
+.N-today{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+    color: black;
+    margin-top: 1rem;
+    margin-left: 10px;
+
+
+}
+.N-rec{
+    position: absolute;
+    z-index: 5;
+    width: 250px;
+    height: 2px;
+    background-color: black;
+    margin-top: 3rem;
+    margin-left: 10px;
+    border-radius: 1px;
+
+}
+.volume{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    color: black;
+    margin-top: 3.5rem;
+    margin-left: 10px;
+
+}
+.yesterday{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+    color: black;
+    margin-left: 12rem;
+    margin-top: 3.5rem;
+}
+.numbers{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    color: black;
+    margin-top: 4.5rem;
+    margin-left: 10px; 
+}
+.small-num{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+    color: black;
+    margin-top: 4.5rem;
+    margin-left: 12rem;
+}   
+.stat-img{
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    height: 150px;
+    margin-top: 15rem;
+    margin-left: 10rem;
+}
+.stat1-img{
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    height: 150px;
+    margin-top: 6rem;
+} 
     
-    
-
-
-
-
- 
- 
- /* For screens that are smaller than 1200px */
+/* For screens that are smaller than 1200px */
  @media (max-width: 1200px) {
      .ul {
          grid-template-columns: repeat(5, 1fr); 
