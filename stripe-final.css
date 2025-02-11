@@ -1,0 +1,1017 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: 'Inter', sans-serif;
+     background-color: #f9f9f9; 
+     max-width: 100%;
+ }
+ 
+ .N-paralelogrami {
+     width: 100%;
+     height: 100vh; 
+     position: absolute;
+     top: 0; 
+     left: 0; 
+     background: linear-gradient(45deg, purple, orange, rgb(126, 196, 214));
+     clip-path: polygon(0 0, 100% 0, 100% 24%, 0 70%);
+     background-size: 200% 200%;
+     animation: moveGradient 5s linear infinite;;
+ }
+ 
+ 
+ 
+ .N-list {
+     position: relative;
+     text-align: center;
+ }
+ 
+ ul {
+     display: grid;
+     grid-template-columns: repeat(8, 1fr); 
+     gap: 10px;
+     padding: 0 20px;
+     list-style-type: none;
+     margin-top: 10px;
+ }
+ 
+ .N-nav-item1 {
+     font-size: 150%;
+     color: black;
+ }
+ 
+ .N-nav-item {
+     color: white;
+     font-size: large;
+ }
+ 
+ .N-header-button {
+     display: inline-block;
+ }
+ 
+ .N-header-buttons {
+     border: none;
+     border-radius: 19px;
+     padding: 10px 14px;
+     background-color: black;
+     color: white;
+     cursor: pointer;
+     transition: color 0.3s ease, opacity 0.3s ease; 
+ }
+ .N-header-buttons1{
+     border: none;
+     border-radius: 5px;
+     padding: 0 20px;
+     background-color: inherit; 
+     color: white;
+     cursor: pointer;
+     transition: color 0.3s ease, opacity 0.3s ease; 
+ 
+ }
+ 
+ .N-header-buttons:hover {
+     transform: scale(1.02);
+     color: rgba(255, 255, 255, 0);  
+     opacity: 0.5;     
+ }
+ .N-header-buttons1:hover {
+     transform: scale(1.02);
+     color: rgba(255, 255, 255, 0);  
+     opacity: 0.5;     
+ }
+ 
+  
+ 
+ .N-button {
+    position: relative;
+    margin-left: 150px; 
+    margin-top: 50px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    text-align: center;
+    color: white;
+    border-color: gainsboro;
+}
+
+ 
+ 
+ 
+ 
+.N-button {
+    position: relative;
+    margin-left: 150px; 
+    margin-top: 50px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    text-align: center;
+    color: white;
+    border-color: gainsboro;
+}
+
+.N-title {
+    position: relative;
+    font-size: 4rem;
+    margin-left: 10%;
+    margin-top: 20px; 
+}
+#text {
+    position: relative; 
+    margin-left: 10%;
+     margin-top: 3%;
+     font-size: 1.1rem;
+ }
+
+ 
+ 
+
+
+.N-search-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#N-search {
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px; 
+    padding-right: 80px;
+    font-size: 16px;
+    border: 1px solid darkslategray; 
+    opacity: 0.3;
+}
+
+.N-search-button {
+    position: absolute; 
+    right: 15px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    height: 35px;
+    background-color: #00b5e2; 
+    color: white; 
+    border: none; 
+    border-radius: 15px; 
+    padding: 5px 15px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    
+}
+
+.N-search-button:hover {
+    background-color: #009bb5; /
+}
+
+#N-search::placeholder {
+    color: #aaa; 
+}
+
+ 
+ .N-icons {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr); 
+     grid-template-rows: repeat(2, 1fr);    
+     gap: 15px;
+     max-width: fit-content;
+     margin: 20px auto;
+     transform: scale(0.9);
+ }
+ 
+ .N-container{
+     width: 800px;
+     margin-left: 400px;
+     
+ 
+ 
+ }
+ .N-icon {
+     width: 50%;
+     height: auto;
+ }
+ 
+ 
+ 
+ .N-button:hover {
+     transform: scale(1.01);
+ }
+ .N-phone-background-fade{
+    position: absolute;
+    background-color: gainsboro;
+    width: 400px;
+    height: 500px;
+    margin-top: 2rem;
+    margin-left: 70rem;
+    opacity: 0.7;
+    border-radius: 10px;
+    z-index: 1;
+ }
+ .N-phone{
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    
+    background-color: whitesmoke;
+   
+    border-radius: 10px;
+    margin-left: 62rem;
+    z-index: 2;
+    margin-top: 5rem;
+ }
+ .N-screen {
+    position: absolute; 
+    width: 230px;
+    height: 460px; 
+    background-color: #eaeaea; 
+    border-radius: 16px;
+    top: 20px; 
+    left: 10px; 
+    z-index: 3;
+
+ }
+ .N-rocket{
+    position: absolute;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    margin-left: 63rem;
+    z-index: 3;
+    
+ }
+ #rocket-search{
+    border-radius: 4px;
+ }
+.N-rec1{
+    position: absolute;
+    background-color: rgb(128, 0, 255);
+    width: 60px;
+    height: 70px;
+    border-radius: 4px;
+    z-index: 4;
+    margin-left: 85px;
+    margin-top: 25px;
+}
+.N-text-rec1{
+    position: absolute;
+    color: white;
+    z-index: 3;
+    font-size: xx-small;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.N-rec2{
+    position: absolute;
+    z-index: 6;
+    background-color: wheat;
+    border-radius: 4px;
+    width: 60px;
+    height: 70px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.N-text-rec2{
+    position: absolute;
+    z-index: 8;
+    color: white;
+    font-size: xx-small;
+
+}
+.abstract{
+    position: absolute;
+    z-index: 4;
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: black;
+    margin-top: 120px;
+    margin-left: 70px;
+    
+}
+.pay-rec{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: darkblue;
+    z-index: 6;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-top: 160px;
+}
+.pay{
+    position: absolute;
+    z-index: 7;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+    color: white;
+    margin-left: 85px;
+    margin-top: 5px;
+}
+.email{
+    position: absolute;
+    z-index: 4;
+    font-size: x-small;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    margin-top: 220px;
+    margin-left: 5px;
+}
+.email-box{
+    position: absolute;
+    z-index: 4;
+    border-color: wheat;
+    background-color: #eaeaea;
+    width: 200px;
+    height: 10px;
+    margin-top: 235px;
+    margin-left: 15px;
+}
+.card{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: x-small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 80px;
+    margin-top: 200px;
+}
+.card-info{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 250px;
+}
+.Number{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: x-small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 265px;
+    word-spacing: 100px;
+
+}
+.MM{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: x-small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 280px;
+    word-spacing: 100px;
+    
+
+}
+.country{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 310px;
+    
+}
+.U{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 330px;
+
+
+}
+.zip{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+    margin-top: 350px;
+
+}
+.pay-reck1{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: darkblue;
+    z-index: 6;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-top: 390px;
+}
+.pay-reck1-text{
+    position: absolute;
+    z-index: 7;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+    color: white;
+    margin-left: 85px;
+    margin-top: 390px;
+
+}
+.stat-rec{
+    position: absolute;
+    z-index: 4;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin-left: 78em;
+    border-radius: 10px;
+    margin-top: 7rem;
+    
+}
+.N-today{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+    color: black;
+    margin-top: 1rem;
+    margin-left: 10px;
+
+
+}
+.N-rec{
+    position: absolute;
+    z-index: 5;
+    width: 250px;
+    height: 2px;
+    background-color: black;
+    margin-top: 3rem;
+    margin-left: 10px;
+    border-radius: 1px;
+
+}
+.volume{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    color: black;
+    margin-top: 3.5rem;
+    margin-left: 10px;
+
+}
+.yesterday{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+    color: black;
+    margin-left: 12rem;
+    margin-top: 3.5rem;
+}
+.numbers{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    color: black;
+    margin-top: 4.5rem;
+    margin-left: 10px; 
+}
+.small-num{
+    position: absolute;
+    z-index: 5;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+    color: black;
+    margin-top: 4.5rem;
+    margin-left: 12rem;
+}   
+.stat-img{
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    height: 150px;
+    margin-top: 15rem;
+    margin-left: 10rem;
+}
+.stat1-img{
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    height: 150px;
+    margin-top: 6rem;
+    
+} 
+    
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    /* Adjusts the grid layout to 5 columns instead of the default layout for the 'ul' element */
+    .ul {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+
+    /* Reduces the font size and adjusts the left margin for the title */
+    .N-title {
+        font-size: 2.5rem; 
+        margin-left: 5%;  
+    }
+
+    /* Adjusts the font size and margin for the text block */
+    #text {
+        font-size: 1rem; 
+        margin-left: 5%;
+    }
+
+    /* Resizes the search input field */
+    #N-search {
+        width: 250px;
+    }
+}
+
+/* For screens smaller than 768px (Mobile/Tablets) */
+@media (max-width: 768px) {
+    /* Adjusts the grid layout to 5 equal columns in the 'ul' element */
+    ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    /* Decreases the font size and adjusts the margin for the title */
+    .N-title {
+        font-size: 1.8rem;
+        margin-left: 5%;
+    }
+
+    /* Reduces the font size and adjusts the margin for the text block */
+    #text {
+        font-size: 0.9rem;
+        margin-left: 5%;
+    }
+
+    /* Resizes the button to 30% width for better mobile usability */
+    .N-button {
+        width: 30%;
+    }
+
+    /* Expands the search input to take up most of the container */
+    #N-search {
+        width: 90%; 
+    }
+
+    /* Modifies the layout of the N-container, using grid layout with 2 columns and 3 rows */
+    .N-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 1fr); 
+        gap: 10px; 
+        margin: 0 auto; 
+        width: 80%; 
+        z-index: 3;
+        margin-top: 10rem;
+    }
+
+    /* Ensures icons fit in the available space and maintain aspect ratio */
+    .N-icon {
+        width: 100%;
+        height: auto; 
+        object-fit: cover;
+    }
+
+    /* Organizes the icons in a 2-column grid */
+    .N-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        max-width: 100%; 
+        margin: 0 auto; 
+        z-index: 3;
+    }
+
+    /* Hides the search container for smaller screens */
+    .N-search-container {
+        display: none;
+    }
+
+    /* Adds spacing to the text for better mobile layout */
+    #text {
+        margin-top: 2rem;
+    }
+
+    /* Hides elements related to the phone UI for small screens */
+    .N-screen, .N-phone, .card, .pay-rec, .card-info, .email-box, 
+    .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rec2, 
+    .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, 
+    .stat-img, .stat1-img, .N-phone-background-fade {
+        display: none;
+    }
+    .N-paralelogrami{
+        width: 100%;
+    }
+}
+
+/* For even smaller screens (600px) */
+@media (max-width: 600px) {
+    /* Hides the button and navigation menu on very small screens */
+    
+    .N-button, .N-list, .N-screen {
+        display: none;
+    }
+    .N-paralelogrami{
+        width: 100%;
+    }
+}
+
+/* For extremely small screens (480px or less) */
+@media (max-width: 480px) {
+    /* Hides the navigation list on the smallest screens */
+    
+    .N-list {
+        display: none;
+    }
+    .N-paralelogrami{
+        width: 100%;
+    }
+
+    /* Adjusts the font size and margin for the title */
+    .N-title {
+        font-size: 1.5rem; 
+        margin-left: 5%;
+    }
+
+    /* Adjusts the font size and margin for the text */
+    #text {
+        font-size: 0.8rem;
+        margin-left: 5%;
+    }
+
+    /* Hides the button on smaller screens */
+    .N-button {
+        display: none;
+    }
+
+    /* Adjusts the search input width to fit smaller screens */
+    #N-search {
+        width: 80%; 
+    }
+
+    /* Modifies the grid layout for icons, reducing to 2 columns */
+    .N-icons {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    /* Hides all elements related to phone UI and other non-essential sections for small screens */
+    .N-screen, .N-phone, .card, .pay-rec, .card-info, .email-box, 
+    .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rec2, 
+    .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, 
+    .stat-img, .stat1-img, .N-phone-background-fade {
+        display: none;
+    }
+}
+
+/* Animation for a moving gradient background effect */
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;  
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%;  
+    }
+}
+#N-section{
+    transition: background-color 0.3s ease-in-out;
+}
+.N-launch {
+    font-family: 'Inter', sans-serif;
+    color: #5167FC;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.N-low-header {
+    font-family: 'Inter', sans-serif;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.N-launch-text {
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.N-boxes {
+    position: relative;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.N-first-box, .N-second-box, .N-third-box {
+    width: 270px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: absolute;
+    transition: transform 0.3s ease-out;
+}
+/* Slide-in animation when hovered */
+.N-first-box:hover,
+.N-second-box:hover,
+.N-third-box:hover {
+    transform: translateY(-10px); /* Move the box upwards */
+}
+.N-first-box {
+    margin-left: 17rem;
+    
+}
+
+.N-second-box {
+    margin-left: 36rem;
+    
+}
+
+.N-third-box {
+    margin-left: 55rem;
+   
+}
+
+
+
+.N-box-square {
+    width: 270px;
+    height: 200px;
+    background-color: wheat;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.N-box-text1, .N-box-text2, .N-box-text3 {
+    font-family: 'Inter', sans-serif;
+    font-size: x-large;
+    position: absolute;
+    top: 14rem;
+    left: 3px;
+}
+
+.N-box-text1-text, .N-box-text2-text, .N-box-text3-text {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 18rem;
+    left: 3px;
+}
+
+.N-circle1, .N-circle2, .N-circle3 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.N-circle1 {
+    background-color: black;
+    top: 2rem;
+    left: 5rem;
+}
+
+.N-circle2 {
+    background-color: white;
+    top: 6rem;
+    left: 14rem;
+}
+
+.N-circle3 {
+    background-color: #5167FC;
+    top: 6.5rem;
+    left: 1rem;
+}
+
+#squarespace, #intuit {
+    color: white;
+    font-size: x-small;
+    margin-top: 2.3rem;
+}
+
+.N-second-square, .N-third-square {
+    width: 270px;
+    height: 200px;
+    background-color: wheat;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+@media(max-width: 600px) {
+    /* Adjustments for mobile view */
+    .N-boxes {
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    .N-first-box, .N-second-box, .N-third-box {
+        position: relative;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+
+   
+
+    .N-box-text1, .N-box-text2, .N-box-text3 {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: 1rem;
+        z-index: 4;
+    }
+    .N-box-text1{
+        transform: translateY(410%);
+    }
+    .N-second-square{
+        transform: translateY(-30%);
+    }
+    .N-box-text2, .N-box-text3{
+        transform: translateY(400%);
+    }
+    
+    .N-box-square, .N-second-square, .N-third-square{
+        width: 100%;
+    }
+    #squarespace {
+        transform: translateX(20%);
+    }
+    #intuit{
+        transform: translateX(35%);
+    }
+}
+/* 769px to 1024px range for tablet / smaller laptop screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .N-boxes {
+        display: flex;
+        justify-content: space-between; /* Adjust spacing between boxes */
+    }
+
+    .N-first-box, .N-second-box, .N-third-box {
+        width: 250px; /* Adjust width to fit the screen */
+        height: 380px; /* Adjust height accordingly */
+        margin-top: 4rem;
+    }
+
+    .N-box-text1, .N-box-text2, .N-box-text3 {
+        font-size: 1.2rem; /* Slightly smaller font size for tablets */
+    }
+
+    .N-box-text1-text, .N-box-text2-text, .N-box-text3-text {
+        font-size: 1rem; /* Smaller font size for text */
+    }
+
+    .N-circle1, .N-circle2, .N-circle3 {
+        width: 80px; /* Adjust circles to fit better */
+        height: 80px;
+    }
+
+    /* Adjusting the circle positions */
+    .N-circle1 {
+        top: 2rem;
+        left: 4rem;
+    }
+
+    .N-circle2 {
+        top: 6rem;
+        left: 12rem;
+    }
+
+    .N-circle3 {
+        top: 6.5rem;
+        left: 1rem;
+    }
+
+    #squarespace, #intuit {
+        font-size: small; /* Adjust font size of text in circles */
+        margin-top: 2.5rem;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.footer-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styling each footer column to stack the ul's vertically */
+.footer-column {
+    flex: 1;
+    margin: 10px; /* Adding spacing between columns */
+}
+
+/* Styling the heading in each column */
+#N-h1 {
+    color: seagreen;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+/* Address section */
+address {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* For large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .footer-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+        gap: 30px;
+    }
+
+    /* Ensure h1 title stays in the first column */
+    #N-h1 {
+        text-align: center;
+        grid-column: 1 / -1; /* Span across all three columns */
+    }
+
+    /* Stack the ul items under each other */
+    .footer-column ul {
+        margin-bottom: 20px;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column; /* Stack ul's vertically */
+    }
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .footer-1 {
+        display: grid; /* Change to grid for better control of columns */
+        grid-template-columns: 1fr 1fr; /* Two columns layout */
+        gap: 20px;
+    }
+
+    #N-h1 {
+        grid-column: span 2; /* Span across both columns */
+        text-align: center;
+    }
+
+    /* Stack the ul items under each other */
+    .footer-column ul {
+        margin-bottom: 20px;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column; /* Stack ul's vertically */
+    }
+}
+
+/* For mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .footer-1 {
+        display: block; /* One column layout */
+    }
+
+    #N-h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Stack the ul items under each other */
+    ul {
+        margin-bottom: 15px;
+    }
+
+    address {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+footer{
+    margin-top: 700px;
+}
+    
+  
+
